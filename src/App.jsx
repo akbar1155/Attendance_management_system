@@ -1,15 +1,13 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import DashboardPages from "./Pages/Dashboard/DashboardPages";
+import Login from "./Pages/LoginPage/login";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      {" "}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* <Login /> */}
+
+      <DashboardPages />
     </>
   );
 }

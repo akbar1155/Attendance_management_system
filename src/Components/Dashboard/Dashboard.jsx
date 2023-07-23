@@ -38,7 +38,7 @@ const Dashboard = () => {
           ].map((icon, index) => ({
             key: String(index + 1),
             icon: React.createElement(icon),
-            label: `nav ${index + 1}`,
+            label: `Hello ${index + 1}`,
           }))}
         />
       </Sider>
@@ -55,9 +55,7 @@ const Dashboard = () => {
             content
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          Ant Design ©2023 Created by Ant UED
-        </Footer>
+        <Footer style={{ textAlign: "center" }}>cecececec</Footer>
       </Layout>
     </Layout>
   );

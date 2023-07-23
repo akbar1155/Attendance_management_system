@@ -1,10 +1,11 @@
 import React from "react";
 import Dashboard from "../../Components/Dashboard/Dashboard";
+import Sidebar from "../../Components/SideBar/sidebar";
 
 const DashboardPages = () => {
   return (
     <div>
-      <nav className=" pt-[9px] pl-[25px] flex">
+      <nav className=" pt-[9px] pl-[25px] flex h-[60px]">
         <h1 className="text-[#012970] text-[26px] font-normal ">Attendify</h1>
         <input
           type="text"
@@ -18,7 +19,8 @@ const DashboardPages = () => {
           }}
         />
       </nav>
-      <Dashboard />
+      {/* <Dashboard /> */}
+      <Sidebar />
     </div>
   );
 };

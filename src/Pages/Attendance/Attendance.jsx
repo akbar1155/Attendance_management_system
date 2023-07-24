@@ -1,14 +1,16 @@
-import React from 'react'
-import Sidebar from '../../Components/SideBar/sidebar'
-
+import React from "react";
+import Sidebar from "../../Components/SideBar/sidebar";
 
 const Attendance = () => {
   return (
     <div>
-        <Sidebar/>
-      
-    </div>
-  )
-}
+      <Sidebar />
+      <div className="container pl-96">
+        <h1>niudeodfeiuono</h1>
 
-export default Attendance
+      </div>
+    </div>
+  );
+};
+
+export default Attendance;

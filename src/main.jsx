@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Attendance",
-    element:<Attendance/>,
+    element: <Attendance />,
   },
   // {
   //   path: "/portfolia",

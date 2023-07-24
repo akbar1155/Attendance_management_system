@@ -4,12 +4,16 @@ import "./Sidebar.scss";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="sidebar-header">
-        <h2>Sidebar</h2>
-      </div>
       <div className="sidebar-content">
         <ul>
-          <li>Item 1</li>
+          <li>
+            {" "}
+            <a href="/Dashboard">Item 1</a>
+          </li>
+          <li>
+            {" "}
+            <a href="/Attendance">Item 2</a>
+          </li>
           <li>Item 2</li>
           <li>Item 3</li>
           {/* Add more sidebar items here */}

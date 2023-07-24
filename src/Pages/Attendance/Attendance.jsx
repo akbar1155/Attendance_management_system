@@ -1,14 +1,12 @@
 import React from "react";
+import Nav from "../../Components/Navbar/nav";
 import Sidebar from "../../Components/SideBar/sidebar";
 
 const Attendance = () => {
   return (
     <div>
+      <Nav />
       <Sidebar />
-      <div className="container pl-96">
-        <h1>niudeodfeiuono</h1>
-
-      </div>
     </div>
   );
 };

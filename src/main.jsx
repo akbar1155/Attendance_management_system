@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Login from "./Pages/LoginPage/login";
 import DashboardPages from "./Pages/Dashboard/DashboardPages";
+import Attendance from "./Pages/Attendance/Attendance";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,10 +15,10 @@ const router = createBrowserRouter([
     path: "/Dashboard",
     element: <DashboardPages />,
   },
-  // {
-  //   path: "/contact",
-  //   element: <Contact />,
-  // },
+  {
+    path: "/Attendance",
+    element: <Attendance />,
+  },
   // {
   //   path: "/portfolia",
   //   element: <Portfolia />,

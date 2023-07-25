@@ -39,13 +39,14 @@ const Attendance = () => {
               <option value="Subject">Vanilla JS</option>
             </select>
             <select name="Section" id="Section" className="p-[12px]">
-                <option value="">React</option>
-                <option value="">Vue JS</option>
-                <option value="">JavaScript</option></select>
+              <option value="">React</option>
+              <option value="">Vue JS</option>
+              <option value="">JavaScript</option>
+            </select>
             <select name="Date" id="Section" value={78} className="p-[12px]">
-                <option value="">React</option>
-                <option value="">Vue Js</option>
-                <option value="">JavaScript</option>    
+              <option value="">React</option>
+              <option value="">Vue Js</option>
+              <option value="">JavaScript</option>
             </select>
           </div>
         </div>

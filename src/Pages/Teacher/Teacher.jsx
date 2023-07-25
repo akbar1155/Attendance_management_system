@@ -3,8 +3,7 @@ import Nav from "../../Components/Navbar/nav";
 import Sidebar from "../../Components/SideBar/sidebar";
 import { Breadcrumb } from "antd";
 import { Link } from "react-router-dom";
-
-const Absence = () => {
+const Teacher = () => {
   return (
     <div>
       <Nav />
@@ -13,7 +12,7 @@ const Absence = () => {
         <div className="content ps-[68px] pt-[48px]">
           {" "}
           <div className="leader mb-[48px]">
-            <h1 className="title__attendance">Absence</h1>
+            <h1 className="title__attendance">TEacher</h1>
             <Breadcrumb style={{ margin: "16px 0" }}>
               <Breadcrumb.Item>
                 <Link to={"/Dashboard"} className="">
@@ -54,4 +53,4 @@ const Absence = () => {
   );
 };
 
-export default Absence;
+export default Teacher;

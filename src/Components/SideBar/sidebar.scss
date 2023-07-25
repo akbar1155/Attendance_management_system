@@ -27,7 +27,8 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #F6F9FF;
+                    background-color: #2851a3;
+                    color: #4154F1;
                 }
             }
         }
@@ -41,6 +42,18 @@
 
 .link1:hover {
     &:hover {
-        background-color: F6F9FF;
+        background-color: #F6F9FF;
+        color: #4154F1;
     }
+}
+
+.sidebarp1 {
+    color: #899BBD;
+    // font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16.5px;
+    /* 150% */
+    text-transform: uppercase;
 }

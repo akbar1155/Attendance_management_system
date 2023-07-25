@@ -14,11 +14,14 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-content">
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <Link
+          to={"/Dashboard"}
+          className="flex w-[260px] h-[44px] gap-2 link1 p-[10px]"
+        >
           <DashboardIcon />
-          <p className="w-[80px]">Dashboard</p>
+          <p className="w-[80px] text-[15px]">Dashboard</p>
         </Link>
-        <p>ANALYSE</p>
+        <p className="sidebarp1">ANALYSE</p>
         <Link
           to={"/Attendance"}
           className="flex w-[260px] h-[44px] gap-2 link1"
@@ -26,29 +29,29 @@ const Sidebar = () => {
           <AttendanceIcon />
           <p>Attendance</p>
         </Link>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <Link to={"/Absence"} className="flex w-[260px] h-[44px] gap-2 link1">
           <AbsenceIcon />
           <p>Absence</p>
         </Link>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <Link to={"/Report"} className="flex w-[260px] h-[44px] gap-2 link1">
           <ReportIcon />
           <p>Report</p>
         </Link>
-        <p>Manage</p>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <p className="sidebarp1">Manage</p>
+        <Link to={"/Teacher"} className="flex w-[260px] h-[44px] gap-2 link1">
           <TeacherIcon />
           <p>Teacher</p>
         </Link>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <Link to={"/Student"} className="flex w-[260px] h-[44px] gap-2 link1">
           <StudentIcon />
           <p>Student </p>
         </Link>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <Link to={"/Subject"} className="flex w-[260px] h-[44px] gap-2 link1">
           <SubjectIcon />
           <p>Subject</p>
         </Link>
-        <p>Chal chla nikal</p>
-        <Link to={"/Dashboard"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <p className="sidebarp1">Chal chla nikal</p>
+        <Link to={"/Logout"} className="flex w-[260px] h-[44px] gap-2 link1">
           <LogOutIcon />
           <p>Logout</p>
         </Link>

@@ -44,7 +44,7 @@ const Attendance = () => {
                 <option value="">JavaScript</option></select>
             <select name="Date" id="Section" value={78} className="p-[12px]">
                 <option value="">React</option>
-                <option value="">Vue JS</option>
+                <option value="">Vue Js</option>
                 <option value="">JavaScript</option>    
             </select>
           </div>

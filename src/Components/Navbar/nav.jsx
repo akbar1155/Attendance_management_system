@@ -4,7 +4,7 @@ import "./nav.scss";
 import BellNav from "../../assets/image/BellNav";
 const Nav = () => {
   return (
-    <nav className=" pt-[9px] pl-[25px] flex h-[60px] bg-white nav1">
+    <nav className=" pt-[9px] pl-[25px] flex h-[60px] bg-white nav1 items-center">
       <h1 className="text-[#012970] text-[26px] font-normal w-[131px]">
         Attendify
       </h1>
@@ -21,10 +21,12 @@ const Nav = () => {
           padding: "9px 39px 9px 9px",
         }}
       />
-      <div className="flex w-[100px] ml-[100vh]">
-        <BellNav />
-        <img src={Profileicon} alt="" />
-        <h1 className="text-[#012970] text-[14px] ">Peterpan</h1>
+      <div className="flex  ml-[90vh] relative r-[66px]">
+        <button className="mr-[20px]">
+          <BellNav />
+        </button>
+        <img src={Profileicon} alt="" className="mr-2" />
+        <h1 className="text-[#012970]  w-[63px] h-[21px] text-sm ">Peterpan</h1>
       </div>
     </nav>
   );

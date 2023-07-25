@@ -10,7 +10,7 @@ import Report from "./Pages/Report/Report";
 import Teacher from "./Pages/Teacher/Teacher";
 import Student from "./Pages/Student/student";
 import Subject from "./Pages/Subject/Subject";
-import Logout from "./Pages/Subject/Logout";
+import Logout from "./Pages/Logout/Logout";
 const router = createBrowserRouter([
   {
     path: "/",

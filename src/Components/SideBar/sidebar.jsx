@@ -21,7 +21,7 @@ const Sidebar = () => {
           <DashboardIcon />
           <p className="w-[80px] text-[15px]">Dashboard</p>
         </Link>
-        <p>ANALYSE</p>
+        <p className="sidebarp1">ANALYSE</p>
         <Link
           to={"/Attendance"}
           className="flex w-[260px] h-[44px] gap-2 link1"
@@ -37,7 +37,7 @@ const Sidebar = () => {
           <ReportIcon />
           <p>Report</p>
         </Link>
-        <p>Manage</p>
+        <p className="sidebarp1">Manage</p>
         <Link to={"/Teacher"} className="flex w-[260px] h-[44px] gap-2 link1">
           <TeacherIcon />
           <p>Teacher</p>
@@ -50,7 +50,7 @@ const Sidebar = () => {
           <SubjectIcon />
           <p>Subject</p>
         </Link>
-        <p>Chal chla nikal</p>
+        <p className="sidebarp1">Chal chla nikal</p>
         <Link to={"/Logout"} className="flex w-[260px] h-[44px] gap-2 link1">
           <LogOutIcon />
           <p>Logout</p>

@@ -3,7 +3,7 @@ import Nav from "../../Components/Navbar/nav";
 import Sidebar from "../../Components/SideBar/sidebar";
 import { Breadcrumb } from "antd";
 import { Link } from "react-router-dom";
-const Subject = () => {
+const Logout = () => {
   return (
     <div>
       <Nav />
@@ -12,7 +12,7 @@ const Subject = () => {
         <div className="content ps-[68px] pt-[48px]">
           {" "}
           <div className="leader mb-[48px]">
-            <h1 className="title__attendance">subject</h1>
+            <h1 className="title__attendance">loguot</h1>
             <Breadcrumb style={{ margin: "16px 0" }}>
               <Breadcrumb.Item>
                 <Link to={"/Dashboard"} className="">
@@ -53,4 +53,4 @@ const Subject = () => {
   );
 };
 
-export default Subject;
+export default Logout;

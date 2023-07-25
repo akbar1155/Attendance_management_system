@@ -27,7 +27,8 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: #F6F9FF;
+                    background-color: #2851a3;
+                    color: #4154F1;
                 }
             }
         }
@@ -41,6 +42,7 @@
 
 .link1:hover {
     &:hover {
-        background-color: F6F9FF;
+        background-color: #F6F9FF;
+        color: #4154F1;
     }
 }

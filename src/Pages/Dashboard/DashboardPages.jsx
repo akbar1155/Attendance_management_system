@@ -31,7 +31,25 @@ const DashboardPages = () => {
             </Breadcrumb>
           </div>
           <div>
-            <div></div>
+            <div>
+              <div>
+                <div className="flex">
+                  {" "}
+                  <p>Present </p>
+                  <p> | Today</p>
+                </div>
+                <div className="flex">
+                  <div className="w-[64px] h-[64px] bg-[#F6F6FE] rounded-[50%]"></div>
+                  <div>
+                    <p>145</p>
+                    <div className="flex">
+                      <p>12%</p> <p>increase</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div></div>
           </div>
         </div>

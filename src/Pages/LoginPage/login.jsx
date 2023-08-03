@@ -1,6 +1,7 @@
 import React from "react";
 import { Radio, Checkbox } from "antd";
-import Button1 from "../../Components/Button/button1";
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <div className="fixed w-[100%]" style={{ margin: "0 auto" }}>
@@ -56,7 +57,11 @@ const Login = () => {
               Remember me
             </Checkbox>
 
-            <Button1 />
+            <div className="bg-[#4154F1] h-[38px] w-[74px] pt-[6px] pl-[13px] shrink-0 text-[#fff] rounded-md mt-[26px]">
+        <Link to={"/Dashboard"} className="h-[38px] w-[74px]" >
+          Sign in
+        </Link>
+      </div>
 
             <p className="text-[#6C757D] text-[16px] mt-[26px] mb-[26px]">
               Forgot password?

@@ -14,39 +14,103 @@ const Absence = () => {
           {" "}
           <div className="leader mb-[48px]">
             <h1 className="title__attendance">Absence</h1>
-            <Breadcrumb style={{ margin: "16px 0" }}>
-              <Breadcrumb.Item>
-                <Link to={"/Dashboard"} className="">
-                  <p className="w-[80px]">Dashboard</p>
-                </Link>
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>
-                {" "}
-                <Link
-                  to={"/Attendance"}
-                  className="flex w-[260px] h-[44px] gap-2 link1"
-                >
-                  <p>Attendance</p>
-                </Link>
-              </Breadcrumb.Item>
-            </Breadcrumb>
           </div>
-          <div className="selects">
-            <select name="Subject" id="Subject" className="p-[12px]">
-              <option value="Subject">Advance Java</option>
-              <option value="Subject">Vue JS</option>
-              <option value="Subject">Vanilla JS</option>
-            </select>
-            <select name="Section" id="Section" className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue JS</option>
-              <option value="">JavaScript</option>
-            </select>
-            <select name="Date" id="Section" value={78} className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue Js</option>
-              <option value="">JavaScript</option>
-            </select>
+          <div class="flex flex-col">
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                  <table class="min-w-full">
+                    <thead class="bg-white border-b">
+                      <tr>
+                        <th
+                          scope="col"
+                          class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                        >
+                          #
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                        >
+                          First
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                        >
+                          Last
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+                        >
+                          Handle
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-gray-100 border-b">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          1
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Mark
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Otto
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          @mdo
+                        </td>
+                      </tr>
+                      
+                      <tr class="bg-white border-b">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          2
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Jacob
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Thornton
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          @fat
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          2
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Jacob
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Thornton
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          @fat
+                        </td>
+                      </tr>
+                      <tr class="bg-white border-b">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          2
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Jacob
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          Thornton
+                        </td>
+                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          @fat
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AbsenceIcon from "../../assets/image/Absence";
 import AttendanceIcon from "../../assets/image/Attendance";
 import DashboardIcon from "../../assets/image/Dashboard";
@@ -9,8 +8,23 @@ import StudentIcon from "../../assets/image/StudentIcon";
 import SubjectIcon from "../../assets/image/SubjectIcon";
 import TeacherIcon from "../../assets/image/TeacherIcon";
 import "./Sidebar.scss";
-
+import React, { useState } from "react";
+import { Button, Modal } from "antd";
 const Sidebar = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal1 = () => {
+    setIsModalOpen(true);
+  };
+  const navigate = useNavigate();
+  const handleOk = () => {
+    navigate("/");
+
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar-content">
@@ -51,10 +65,36 @@ const Sidebar = () => {
           <p>Subject</p>
         </Link>
         <p className="sidebarp1">Chal chla nikal</p>
-        <Link to={"/Logout"} className="flex w-[260px] h-[44px] gap-2 link1">
+        <div className="flex w-[260px] h-[44px] gap-2 link1 cursor-auto">
           <LogOutIcon />
-          <p>Logout</p>
-        </Link>
+          {/* <p>Logout</p> */}
+          <div onClick={showModal1} className="w-[260px]">
+            Logout
+          </div>
+          <Modal
+            title="Notification"
+            open={isModalOpen}
+            onOk={handleOk}
+            okType="primary"
+            onCancel={handleCancel}
+            footer={null}
+          >
+            <div className="text-[20px]">Are you sure?</div>
+            <div className="ml-[75%] flex w-[120px] justify-between"> 
+               <Button style={{backgroundColor:'#4096FF'}} type="primary" onClick={handleCancel}>
+              No
+            </Button>
+            <Button style={{backgroundColor:'#4096FF'}} type="primary" onClick={handleOk}>
+              Yes
+            </Button>
+            </div>
+           
+          </Modal>
+        </div>
+
+        {/* <Link to={"/"} >
+
+        </Link> */}
       </div>
     </div>
   );

@@ -41,15 +41,15 @@ const Login = () => {
             </label>
             <input
               type="text"
-              className="rounded-md w-[452px] h-[49px] mt-[9px] mb-[26px]"
+              className="rounded-md w-[452px] h-[49px] mt-[9px] mb-[26px] text-[16px] p-2"
               style={{ border: "1px solid #CED4DA" }}
             />
             <label htmlFor="" className=" text-[14px] ">
               Password
             </label>
             <input
-              type="text"
-              className="rounded-md w-[452px] h-[49px] mt-[8px] "
+              type="password"
+              className="rounded-md w-[452px] h-[49px] mt-[8px] text-[20px] p-2"
               style={{ border: "1px solid #CED4DA" }}
             />
             <Checkbox className="w-[143px] h-[24px] mt-[26px] text-[15px] text-[#212529]">

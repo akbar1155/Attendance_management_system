@@ -4,7 +4,7 @@ import "./nav.scss";
 import BellNav from "../../assets/image/BellNav";
 const Nav = () => {
   return (
-    <nav className=" pt-[9px] pl-[25px] flex h-[60px] bg-white nav1 items-center">
+    <nav className=" pt-[9px] pl-[25px] flex h-[60px] bg-white nav1 items-center pr-4">
       <h1 className="text-[#012970] text-[26px] font-normal w-[131px]">
         Attendify
       </h1>

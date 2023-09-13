@@ -11,6 +11,9 @@ import Teacher from "./Pages/Teacher/Teacher";
 import Student from "./Pages/Student/student";
 import Subject from "./Pages/Subject/Subject";
 import Logout from "./Pages/Logout/Logout";
+import Addteacher from "./Pages/Teacher/addteacher";
+import AddStudent from "./Pages/Student/AddStudent";
+import AddSubject from "./Pages/Subject/AddSubject";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,9 +51,22 @@ const router = createBrowserRouter([
     path: "/Logout",
     element: <Logout />,
   },
+  {
+    path: "/addteacher",
+    element: <Addteacher/>,
+  },
+  {
+    path: "/addstudent",
+    element: <AddStudent/>,
+  },
+  {
+    path: "/addsubject",
+    element: <AddSubject/>,
+  },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    
     <RouterProvider router={router} />
     {/* <Attendance/> */}
   </React.StrictMode>

@@ -2,50 +2,137 @@ import React from "react";
 import Nav from "../../Components/Navbar/nav";
 import Sidebar from "../../Components/SideBar/sidebar";
 import { Breadcrumb } from "antd";
+import {
+  FieldNumberOutlined,
+  EditOutlined,
+  DeleteOutlined,
+} from "@ant-design/icons";
 import { Link } from "react-router-dom";
 const Teacher = () => {
   return (
     <div>
       <Nav />
-      <div className="container flex">
+      <div className="flex">
         <Sidebar />
-        <div className="content ps-[68px] pt-[48px]">
+        <div className="ps-[68px] pt-[48px] w-[80%]">
           {" "}
-          <div className="leader mb-[48px]">
-            <h1 className="title__attendance">TEacher</h1>
-            <Breadcrumb style={{ margin: "16px 0" }}>
-              <Breadcrumb.Item>
-                <Link to={"/Dashboard"} className="">
-                  <p className="w-[80px]">Dashboard</p>
-                </Link>
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>
-                {" "}
-                <Link
-                  to={"/Attendance"}
-                  className="flex w-[260px] h-[44px] gap-2 link1"
-                >
-                  <p>Attendance</p>
-                </Link>
-              </Breadcrumb.Item>
-            </Breadcrumb>
+          <div className="flex justify-between pl-4 pr-4">
+            <div className="leader mb-[48px] items-center">
+              <h1 className="title__attendance">Teacher</h1>
+              <Breadcrumb
+                items={[
+                  {
+                    title: "Manage",
+                  },
+
+                  {
+                    title: "Teacher",
+                  },
+                ]}
+              />
+            </div>
+
+            <Link to={"/addteacher"}>
+              <button className="bg-[#0D6EFD]  text-white rounded-lg w-[120px] h-[45px]">
+                Add teacher
+              </button>
+            </Link>
           </div>
-          <div className="selects">
-            <select name="Subject" id="Subject" className="p-[12px]">
-              <option value="Subject">Advance Java</option>
-              <option value="Subject">Vue JS</option>
-              <option value="Subject">Vanilla JS</option>
-            </select>
-            <select name="Section" id="Section" className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue JS</option>
-              <option value="">JavaScript</option>
-            </select>
-            <select name="Date" id="Section" value={78} className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue Js</option>
-              <option value="">JavaScript</option>
-            </select>
+          <div className="bg-white p-8 w-[100%] mt-4 rounded-lg">
+            <div className="flex justify-between pt-5 pb-5">
+              <h1>Current Teachers</h1>
+              <input
+                type="text"
+                placeholder="Search..."
+                className="border p-4 text-[18px] h-12 rounded-md"
+              />
+            </div>
+            <table className="w-[100%]">
+              <tr>
+                <th>
+                  <FieldNumberOutlined />
+                </th>
+                <th>Teacher name </th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Maria Anders</td>
+                <td>Dolpa</td>
+                <td>maan@gmail.com</td>
+                <td>@malama</td>
+                <td>molamo</td>
+                <td className="flex text-[22px] gap-x-4">
+                  <EditOutlined className="text-[#7D7D7D]" />
+                  <DeleteOutlined className="text-[red]" />
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>

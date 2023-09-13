@@ -1,52 +1,108 @@
 import React from "react";
 import Nav from "../../Components/Navbar/nav";
 import Sidebar from "../../Components/SideBar/sidebar";
-import { Breadcrumb } from "antd";
+import { Breadcrumb, DatePicker } from "antd";
 import { Link } from "react-router-dom";
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+import UrlShortener from "../../Components/Service";
+import WeatherInfo from "../../Components/Service";
+const onChange = (date, dateString) => {
+  console.log(date, dateString);
+};
 
 const Report = () => {
+  const dateFormat = "DD/MM/YYYY";
+  dayjs.extend(customParseFormat);
   return (
     <div>
       <Nav />
-      <div className="container flex">
+      <div className="flex">
         <Sidebar />
-        <div className="content ps-[68px] pt-[48px]">
+        <div className=" ps-[68px] pt-[48px] ">
           {" "}
           <div className="leader mb-[48px]">
-            <h1 className="title__attendance">Report</h1>
-            <Breadcrumb style={{ margin: "16px 0" }}>
-              <Breadcrumb.Item>
-                <Link to={"/Dashboard"} className="">
-                  <p className="w-[80px]">Dashboard</p>
-                </Link>
-              </Breadcrumb.Item>
-              <Breadcrumb.Item>
-                {" "}
-                <Link
-                  to={"/Attendance"}
-                  className="flex w-[260px] h-[44px] gap-2 link1"
-                >
-                  <p>Attendance</p>
-                </Link>
-              </Breadcrumb.Item>
-            </Breadcrumb>
+            <h1 className="title__attendance">Attendance</h1>
+            <Breadcrumb
+              items={[
+                {
+                  title: "Teack",
+                },
+                {
+                  title: <a href="">Attendance</a>,
+                },
+
+                {
+                  title: "Attendance sheet",
+                },
+              ]}
+            />
           </div>
-          <div className="selects">
-            <select name="Subject" id="Subject" className="p-[12px]">
-              <option value="Subject">Advance Java</option>
-              <option value="Subject">Vue JS</option>
-              <option value="Subject">Vanilla JS</option>
-            </select>
-            <select name="Section" id="Section" className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue JS</option>
-              <option value="">JavaScript</option>
-            </select>
-            <select name="Date" id="Section" value={78} className="p-[12px]">
-              <option value="">React</option>
-              <option value="">Vue Js</option>
-              <option value="">JavaScript</option>
-            </select>
+          <div>
+            <form className="flex w-[95%] p-[26px] gap-[20px] bg-white ">
+              <div className="attendance-form__item pl-2">
+                <label className="attendance-form__title block" htmlFor="cars">
+                  Select
+                </label>
+                <select
+                  id="cars"
+                  name="cars"
+                  className="attendance-form__select"
+                >
+                  <option value="Advance Java">A</option>
+                  <option value="Advance Java 2">B </option>{" "}
+                  <option value="Advance Java 2">C </option>{" "}
+                  <option value="Advance Java">D </option>
+                </select>
+              </div>
+              <div className="attendance-form__item pl-2">
+                <label className="attendance-form__title block" htmlFor="cars">
+                  Subject
+                </label>
+                <select
+                  id="cars"
+                  name="cars"
+                  className="attendance-form__select"
+                >
+                  <option value="Advance Java">Advance Java1</option>
+                  <option value="Advance Java 2">Advance Java2</option>{" "}
+                  <option value="Advance Java 2">Advance Java3</option>{" "}
+                  <option value="Advance Java">Advance Java4</option>
+                </select>
+              </div>
+              <div className="attendance-form__item pl-2">
+                <label className="attendance-form__title block" htmlFor="cars">
+                  Select
+                </label>
+                <select
+                  id="cars"
+                  name="cars"
+                  className="attendance-form__select"
+                >
+                  <option value="Advance Java">A</option>
+                  <option value="Advance Java 2">B </option>{" "}
+                  <option value="Advance Java 2">C </option>{" "}
+                  <option value="Advance Java">D </option>
+                </select>
+              </div>
+              <div className="attendance-form__item pl-2 pr-2">
+                <label className="attendance-form__title block" htmlFor="cars">
+                  Month
+                </label>
+
+                <DatePicker onChange={onChange} picker="month" />
+              </div>
+              <div className="attendance-form__item pl-2 pr-2">
+                <label className="attendance-form__title block" htmlFor="cars">
+                  Year
+                </label>
+                <DatePicker onChange={onChange} picker="year" />{" "}
+              </div>
+              <div className="cursor-pointer attendance-form__btn">
+                <p className="attendance-form__btn__text"> Generate Sheet</p>
+              </div>
+            </form>
+            {/* <WeatherInfo/> */}
           </div>
         </div>
       </div>

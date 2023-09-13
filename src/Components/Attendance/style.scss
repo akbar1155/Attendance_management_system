@@ -1,0 +1,29 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+
+}
+
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f6f6e4;
+}
+
+h1 {
+    color: #012970;
+    // font-family: Poppins;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21.6px;
+    padding: 10px;
+    /* 120% */
+}

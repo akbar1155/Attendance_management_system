@@ -1,0 +1,41 @@
+/* AddTeacher.scss */
+
+/* Your existing styles here */
+
+/* Add styles for the new subject-related fields */
+#subject_name,
+#subject_code,
+#course,
+#teacher {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the select dropdown */
+select {
+  width: 100%;
+  // padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit and reset buttons */
+button[type="submit"],
+button[type="reset"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: #000;
+}

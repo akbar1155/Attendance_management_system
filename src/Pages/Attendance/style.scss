@@ -10,16 +10,16 @@
 
 .attendance-form {
   display: flex;
-  width: 1092px;
-  padding: 26px 26px;
+  width: 900px;
+  padding: 15px 15px;
   align-items: flex-end;
-  gap: 34px;
-  border-radius: 5px;
+  gap: 44px;
+  border-radius: 10px;
   background: #FFF;
 
   &__item {
     width: 164px;
-    height: 58px;
+    height: 60px;
     border-radius: 6px;
     border: 1px solid #CED4DA;
     background-color: white;
@@ -39,10 +39,11 @@
 
     &__text {
       color: #FFF;
-      font-family: Roboto;
+      // font-family: Roboto;
       font-size: 12px;
       font-style: normal;
       font-weight: 400;
+      // width: 500px;
       line-height: normal;
     }
   }
@@ -59,7 +60,8 @@
 
   &__select {
     width: 140px;
-    height: 30px;
+    height: 25px;
+    // padding-bottom: 15px;
     border: none;
     display: inline-flex;
     padding-right: 0px;

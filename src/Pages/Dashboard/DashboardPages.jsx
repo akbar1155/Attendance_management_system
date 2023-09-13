@@ -10,7 +10,7 @@ const DashboardPages = () => {
   return (
     <div>
       <Nav />
-      <div className="container flex">
+      <div className="flex">
         <Sidebar />
         <div className="content ps-[68px] pt-[48px]">
           {" "}

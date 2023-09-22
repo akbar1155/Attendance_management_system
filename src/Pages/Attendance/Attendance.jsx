@@ -97,8 +97,9 @@ const Attendance = () => {
                 <p className="attendance-form__btn__text"> Generate Sheet</p>
               </div>
             </form>
-            <div className="pt-[10px] rounded-2xl">
+            <div className="pt-[20px] rounded-2xl bg-white mt-1 pb-4">
               <AttendanceTable />
+           
             </div>
           </div>
         </div>

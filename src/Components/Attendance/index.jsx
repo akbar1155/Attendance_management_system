@@ -20,7 +20,7 @@ export default function AttendanceTable() {
     fetchPosts();
   }, []);
   return (
-    <div className="bg-white p-8 w-[100%] h-[40%] overflow-auto">
+    <div className="bg-white p-8 w-[100%] h-[450px] overflow-auto">
       <h1>Subject Report</h1>
 
       <table className="w-[100%]">
